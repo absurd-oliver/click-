@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<script defer>
+var clicks = 0;
+
+function handleclick(){
+    clicks += 1;
+    document.getElementById('clickerButton').innerHTML = clicks;
+
+}</script>
+</head>
+<body>
+    <button id="clickerButton" onclick="handleclick()">click</button>
+    <style>
+        body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    font-size: 400px;
+    height: 50vh;
+    width: 90vw;
+    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(240, 96, 96);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:rgb(243, 56, 56);
+}
+    </style>
+</body>
+</html>
